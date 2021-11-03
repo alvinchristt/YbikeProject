@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Ybike-logo img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    height: 90px;
+    width: 150px;
+}
+#YBIKE img {
+    height: 50px;
+    width: 200px;
+}
+#products{
+   position: absolute;
+   background-color:white;
+   width: 120px;
+   height: 80px;
+   top: 110px;
+   right: 195px; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   transition: all 0.5s;
+   opacity: 0;
+}
+
+#product:hover #products{
+    background-color: white;
+   
+    opacity: 1;
+}
+#kawasako a{
+    color: black;
+    text-decoration: none;
+}
+#vixion a{
+    color: black;
+    text-decoration: none;
+}
+
+
+ul{
+    position: absolute;
+    background-color: white;
+    height: 390px;
+    width: 155px;
+    top: 60px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform:translateX(120%);
+    transition: all 1s;
+    opacity: 0;
+}
+ul.menu{
+    transform: translateX(0);
+    opacity: 1;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+  /*padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 36px;
+    padding-bottom: 30px; */
+}
+#home{
+    padding-right: 12ch;
+    padding-left: 10ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+#prod{
+    padding-right: 11ch;
+    padding-left: 74px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    
+}
+#gallery{
+    padding-right: 12ch;
+    padding-left: 9ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+.gallery-grid img:hover{
+    transform: scale(130%);
+}
+.gallery-grid img{
+    transition: all 0.8s;
+}
+#Reserved{
+    padding-right: 12ch;
+    padding-left: 7ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+ul li a:hover{
+    background-color: brown;
+    color: white;
+}
+
+/* Hamburger */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    left: -15px;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    opacity: 0;
+    top: -3px;
+    left: -10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 35px;    
+    height: 4px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.7s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+    
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(0px,-1px); 
+    background-color: #c2c2c2
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-3px,5px);
+    background-color: #c2c2c2
+}
+
+.content{
+    background-color: brown;
+}
+.Gallery{
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.gallery-tittle{
+    text-align: center;
+}
+
+.gallery-grid img{
+    width: 100%;
+}
+
+.Footer{
+    height: 58px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#Copyright{
+    padding-left: 30px;
+}
+#Twitter{
+    width: 35px;
+    height: 35px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#Instagram{
+    width: 35px;
+    height: 37px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+#Facebook{
+    width: 35px;
+    height: 35px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #YBIKE{
+        display: none;
+    }
+    .Header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gallery-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-grid img:hover{
+        transform: scale(80%);
+    }
+}

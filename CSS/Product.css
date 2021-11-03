@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Ybike-logo img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    height: 90px;
+    width: 150px;
+}
+#YBIKE img {
+    height: 50px;
+    width: 200px;
+}
+#products{
+   position: absolute;
+   background-color:white;
+   width: 120px;
+   height: 80px;
+   top: 110px;
+   right: 195px; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   transition: all 0.5s;
+   opacity: 0;
+}
+
+#product:hover #products{
+    background-color: white;
+   
+    opacity: 1;
+}
+#kawasako a{
+    color: black;
+    text-decoration: none;
+}
+#vixion a{
+    color: black;
+    text-decoration: none;
+}
+
+
+ul{
+    position: absolute;
+    background-color: white;
+    height: 390px;
+    width: 155px;
+    top: 60px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform:translateX(120%);
+    transition: all 1s;
+    opacity: 0;
+}
+ul.menu{
+    transform: translateX(0);
+    opacity: 1;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+  /*padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 36px;
+    padding-bottom: 30px; */
+}
+#home{
+    padding-right: 12ch;
+    padding-left: 10ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+#prod{
+    padding-right: 11ch;
+    padding-left: 74px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    
+}
+#gallery{
+    padding-right: 12ch;
+    padding-left: 9ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+#Reserved{
+    padding-right: 12ch;
+    padding-left: 7ch;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+ul li a:hover{
+    background-color: brown;
+    color: white;
+}
+
+/* Hamburger */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    left: -15px;
+}
+.content img:hover{
+    transform: scale(90%);
+}
+.content img{
+    transition: all 0.8s;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    opacity: 0;
+    top: -3px;
+    left: -10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 35px;    
+    height: 4px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.7s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+    
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(0px,-1px); 
+    background-color: #c2c2c2
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-3px,5px);
+    background-color: #c2c2c2
+}
+
+
+/*content*/
+.content{
+    background-color: brown;
+}
+.top-left img{
+    width: 250px;
+    height: 200px;
+}
+.description{
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.batch1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.top{
+    display: flex;
+    
+}
+.kotak{
+    display: flex;
+    flex-direction: column;
+    
+}
+.top-right{
+    padding-left: 10px;
+
+}
+
+.motorPrice{
+    padding-top: 50px;
+
+}
+.descriptionText{
+    padding-top: 10px;
+    font-size: 15px;
+    width: 50ch;
+    color: white;
+}
+.motorType{
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.motorPrice div:nth-child(1){
+    color:rgb(218, 221, 21);
+    font-weight: bold;
+}
+
+.motorPrice div:nth-child(2){
+    padding-top: 5px;
+    color:whitesmoke;
+}
+.batch2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 35px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+
+
+/*footer*/
+.Footer{
+    height: 58px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Copyright{
+    padding-left: 30px;
+}
+#Twitter{
+    width: 35px;
+    height: 35px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#Instagram{
+    width: 35px;
+    height: 37px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+#Facebook{
+    width: 35px;
+    height: 35px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #YBIKE{
+        display: none;
+    }
+    .Header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .batch1{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .batch2{
+        display: flex;
+        flex-direction: column;
+    }
+}

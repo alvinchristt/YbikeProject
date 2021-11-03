@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../CSS/Reserved.css">
+</head>
+<body>
+    <div class="Header">
+        <div id="Ybike-logo">
+            <img src="../Images/Ybike-logo.JPG" alt="" >
+        </div>
+        <div id="YBIKE">
+            <img src="../Images/YBIKE.JPG" alt="" >
+        </div>
+        
+
+        <ul>
+            <li><a id="home" href="Home.html">Home</a></li>
+            <div id="product">
+                    <li><a id="prod" href="#" >Products</a></li>
+                <div id="products">
+                    <div id="kawasako">
+                       <a href="Kawasako.html">Kawasako</a> 
+                    </div>
+                    <div id="vixion">
+                        <a href="Vixian.html">Vixian</a>
+                    </div>
+                </div>
+            </div>
+            <li><a id="gallery" href="Gallery.html">Gallery</a></li>
+            <li><a id= "Reserved"href="Reserved.html">Reserved</a></li>
+        </ul>
+
+       <div class="menu-toggle">
+           <input type="checkbox">
+           <span></span>
+           <span></span>
+           <span></span>
+       </div> 
+    
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <button onclick="showimg()"><img id="img1" src="../Asset/683274_720.jpg" alt=""></button>
+            <button onclick="showimg()"><img id="img2" src="../Images/Exhibition Images2.JPG" alt=""></button>
+            <button onclick="showimg()"><img id="img3" src="../Images/Exhibition Images3.JPG" alt=""></button>
+        </div>
+        <div class="bottom">
+           <button onclick="showimg()"><img id="img4" src="../Images/Exhibition Images1.jpg" alt=""></button>
+           <button onclick="showimg()"><img id="img4" src="../Asset/793928_720.jpg" alt=""></button>
+           <button onclick="showimg()"><img id="img4" src="../Asset/740509_720.jpg" alt=""></button>
+        </div>
+
+        <div id="form">
+            <div class="form">
+                <input id="quantity" type="number" placeholder="Quantity">
+                
+                <form name="myForm" method="post" id="radio">
+                <label for="white">White</label>
+                <input White type="radio" name="White" id="putih">
+                <label for="black">Black</label>
+                <input Black type="radio" name="White" id="Black">
+                </form>
+                
+                
+                
+                <input id="name" type="text" placeholder="Name">
+                <input id="phone" type="text" placeholder="Phone">
+                <input id="address" type="text" placeholder="Address">
+            </div>
+            <button id="input">Confirm</button>
+
+
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="Footer-left">
+            <img src="../Images/Copyright.JPG" alt="" id="Copyright" >
+        </div>
+        <div class="Footer-right">
+            <a href="https://www.facebook.com/Kawasaki.Motorcycle.and.Engine.Company"><img src="../Images/Facebook.jpg" alt="" id="Facebook"></a>
+           <a href="https://www.instagram.com/kawasaki_indonesia/"><img src="../Images/Instagram.JPG" alt="" id="Instagram"> </a> 
+            <a href="https://twitter.com/KawasakiUSA"><img src="../Images/Twitter.JPG" alt="" id="Twitter"></a>
+        </div>
+    </div>
+    
+    <script src="../Javascript/Reserved.js"></script>
+
+
+
+</body>
+</html>
